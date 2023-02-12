@@ -71,4 +71,10 @@ public class Alumno implements Serializable {
 		this.edad = edad;
 	}
 
+	@Override
+	public String toString() {
+		return ("[ID: " + this.id + ", NOMBRE Y APELLIDOS: " + this.nombre + " " + this.apellidos + ", CURSO: "
+				+ this.curso + ", NUM ASIGNATURAS MATRICULADO: " + this.num_asig_matric + ", EDAD: " + this.edad + "]");
+	}
+
 }
